@@ -72,7 +72,7 @@ module Spice
       end
       
       if options[:json]
-        return MultiJson.dump(response.body)
+        return MultiJson.encode(response.body)
       end
       
       return response.body

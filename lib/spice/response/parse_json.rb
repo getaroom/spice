@@ -14,7 +14,7 @@ module Spice
         when 'false'
           false
         else
-          MultiJson.load(body)
+          MultiJson.decode(body)
         end
       end # def parse
       
